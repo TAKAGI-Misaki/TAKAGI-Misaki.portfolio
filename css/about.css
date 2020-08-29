@@ -1,0 +1,616 @@
+@charset "UTF-8";
+body {
+    margin: 0;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: #707070;
+    font-family: "游ゴシック体";
+    letter-spacing: 0.2em;
+    text-align: center;
+}
+
+.under-borderlink {
+    text-decoration: underline;
+    color: #707070;
+}
+
+ul {
+    padding-inline-start: 0px;
+}
+
+li {
+    list-style: none;
+}
+
+p {
+    font-family: "游ゴシック体";
+    font-size: 14px;
+    color: #707070;
+    letter-spacing: 0.2em;
+}
+
+header {
+    width: 100%;
+    height: 180px;
+    position: fixed;
+    z-index: 3;
+}
+
+.global-ttl {
+    font-family: "Cochin";
+    font-weight: normal;
+    font-size: 14px;
+    color: #707070;
+    letter-spacing: 0.1em;
+    line-height: 180px;
+    margin-left: 80px;
+}
+
+.menu-btn {
+    width: 50px;
+    height: 70px;
+    margin-top: 80px;
+    margin-right: 80px;
+    color: #707070;
+    display: inline-block;
+    float: right;
+}
+
+.bar1,.bar2,.bar3 {
+    width: 80%;
+    border-top: solid 1.2px #707070;
+    padding-bottom: 10px;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+
+.bar1-deg {
+    transform: rotate(43deg);
+    padding-bottom: 0px;
+    transition: 0.3s;
+}
+
+.bar2-deg {
+    display: none;
+    transition: 0.3s;
+}
+
+
+.bar3-deg {
+    transform: rotate(-43deg);
+    padding-bottom: 0px;
+    transition: 0.3s;
+}
+
+
+.menu-btn-nav {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    margin-top: 150px;
+    margin-right: -50px;
+}
+
+
+.manu-nav-list {
+    text-align: right;
+    font-family: "Cochin";
+    font-weight: normal;
+    font-size: 14px;
+    color: #707070;
+    padding-bottom: 20px;
+    display: none;
+}
+
+.manu-nav-list:hover {
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.title {
+    width: 100%;
+    padding-top: 180px;
+}
+
+h1 {
+    font-family: "Cochin";
+    font-weight: normal;
+    font-size: 40px;
+    color: #707070;
+    text-align: center;
+    line-height: 0;
+    letter-spacing: 0.2em;
+    margin-bottom: 25px;
+}
+
+.sub-title {
+    font-family: "游ゴシック体";
+    font-size: 12px;
+    color: #707070;
+    text-align: center;
+    letter-spacing: 0.2em;
+}
+
+.about-wrapper {
+    width: 100%;
+    height: auto;
+}
+
+.about-box {
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    
+}
+
+.about-box2 {
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.me-box {
+    width: 600px;
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+    background: white;
+    padding: 0 10px;
+    animation  : dray 3s ;
+}
+
+.me-box2 {
+    width: 600px;
+    height: 400px;
+    margin: 0 auto;
+    background: white;
+    padding: 0 3%;
+    animation  : dray 4s ;
+}
+
+.me-box3 {
+    width: 600px;
+    height: 400px;
+    margin: 0 auto;
+    background: white;
+    margin-top: 50px;
+    padding: 0 3%; 
+    animation  : dray 5s ;
+}
+
+@keyframes dray {
+    0%{opacity: 0;}
+    30%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.text1 {
+    font-size: 14px;
+}
+
+.text2 {
+    font-size: 10px;
+    padding-left: 160px;
+}
+
+.text-4 {
+   font-size: 12px;
+}
+
+.about-me-text {
+    position: absolute;
+    top: 120px;
+    right: 70px;
+    text-align: center;
+    font-family: "游ゴシック体";
+    font-size: 18px;
+    color: #707070;
+    letter-spacing: 0.1em;
+}
+
+.about-me-text-under {
+    width: 310px;
+    position: absolute;
+    top: 100px;
+    right: 45px;
+    text-align: center;
+    font-family: "游ゴシック体";
+    font-size: 18px;
+    color: #707070;
+    letter-spacing: 0.1em;
+}
+
+.wave-circle {
+  position: absolute;
+  animation: wave 13s linear infinite; 
+  width: 400px;
+  height: 350px;
+  background: #F7F7F7;
+  top: 40px;
+  right: 5px;    
+}
+
+.wave-circle2 {
+  position: absolute;
+  animation: wave 14s linear infinite; 
+  width: 250px;
+  height: 250px;
+  background-image: url("https://github.com/TAKAGI-Misaki/TAKAGI-Misaki.portfolio/blob/master/image/About-me.png?raw=true");
+  background-size: cover;
+  background-position: right;
+}
+
+.wave-circle3 {
+  position: relative;
+  animation: wave 15s linear infinite; 
+  width: 400px;
+  height: 350px;
+  background: #F7F7F7;    
+}
+
+.wave-circle4 {
+  position: absolute;
+  animation: wave 16s linear infinite; 
+  width: 250px;
+  height: 250px;
+  background-image: url("https://github.com/TAKAGI-Misaki/TAKAGI-Misaki.portfolio/blob/master/image/about-toto1.jpeg?raw=true");
+  background-size: cover;
+  background-position: right;
+  top: 130px;
+  left: 360px;
+}
+
+.wave-circle5 {
+  position: relative;
+  animation: wave 15s linear infinite; 
+  width: 400px;
+  height: 350px;
+  margin-top: 35px;
+  margin-left: 200px;    
+  background: #F7F7F7;    
+}
+
+.wave-circle6 {
+  position: absolute;
+  animation: wave 16s linear infinite; 
+  width: 250px;
+  height: 250px;
+  background-image: url("https://github.com/TAKAGI-Misaki/TAKAGI-Misaki.portfolio/blob/master/image/about-music.jpg?raw=true");
+  background-size: cover;
+  background-position: right;
+  top: -30px;
+  right: 350px;    
+}
+
+.wave-circle7 {
+  position: absolute;
+  animation: wave 13s linear infinite; 
+  width: 150px;
+  height: 150px;
+  background-image: url("https://github.com/TAKAGI-Misaki/TAKAGI-Misaki.portfolio/blob/master/image/about-toto2.jpeg?raw=true");
+  background-size: cover;
+  background-position: center;
+  top: 250px;
+  left: 250px;    
+}
+
+@keyframes wave {
+  0% {
+    border-radius: 80% 85% 80% 70%; 
+  }
+  20% {
+    border-radius: 70% 60% 70% 80%; 
+  }
+  40% {
+    border-radius: 60% 80% 85% 70%; 
+  }
+  60% {
+    border-radius: 85% 70% 80% 85%; 
+  }
+  80% {
+    border-radius: 70% 80% 85% 60%; 
+  }
+  100% {
+    border-radius: 80% 85% 80% 70%; 
+  }
+}
+
+.skill {
+    width: 100%;
+    height: auto;
+}
+
+.skill-box {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.skill-list-box {
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill-bar {
+    display: flex;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 3%;
+    margin: 0 auto;
+}
+
+.app-title {
+    font-weight: bold;
+    display: inline-block;
+    padding-bottom: 20px;
+}
+
+.skill-p {
+    width: 350px;
+    margin-bottom: 50px;
+    margin-left: 30px;
+}
+
+
+.white-bar {
+    position: absolute;
+    width: 100%;
+    height: calc(10vw);;
+    background: #F7F7F7;
+    top: 0;
+}
+
+.step-arrow{
+    padding-top: calc(10vw + 10px); /* 高さに合わせて調節してください。*/  
+    position: relative;
+    z-index: 2;
+}
+.step-arrow::before,
+.step-arrow::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 10vw solid white;  /* 好みで高さ色を変えてください */ 
+}
+.step-arrow::before{
+    left: 0;
+    border-right: 50vw solid transparent;
+}
+.step-arrow::after{
+    right: 0;
+    border-left: 50vw solid transparent;
+}
+
+footer {
+    widows: 100%;
+    height: auto;
+    padding-top: 180px;
+    background: #F7F7F7;
+    position: relative;
+}
+
+.white-bar {
+    position: absolute;
+    width: 100%;
+    height: calc(10vw);;
+    background: white;
+    top: 0;
+}
+
+.step-arrow{
+    padding-top: calc(10vw + 10px); /* 高さに合わせて調節してください。*/  
+    position: relative;
+    z-index: 2;
+}
+.step-arrow::before,
+.step-arrow::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 10vw solid #F7F7F7;  /* 好みで高さ色を変えてください */ 
+}
+.step-arrow::before{
+    left: 0;
+    border-right: 50vw solid transparent;
+}
+.step-arrow::after{
+    right: 0;
+    border-left: 50vw solid transparent;
+}
+
+.nav-angles {
+    width: 60%;
+    height: auto;
+    padding-top: 85px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.nav-scrolls:hover {
+    opacity: 0.7;
+}
+
+.nav-scrolls {
+    font-family: "Cochin";
+    font-weight: normal;   
+}
+
+.nav-bar {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.nav-bar-li {
+    margin: 0 auto;
+    padding: 15px 15px;
+}
+
+.nav-link {
+    font-family: "游ゴシック体";
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.nav-link:hover {
+    opacity: 0.7;
+}
+
+@media screen and (max-width:1000px) {
+    
+.nav-angles {
+    width: 60%;
+    height: auto;
+    padding-top: 0px;
+    margin: 0 auto;
+    text-align: center;
+}
+    
+.nav-bar {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+    
+}
+
+@media screen and (max-width:700px) {
+
+body {
+    overflow-x: hidden;
+}    
+    
+.global-ttl {
+    line-height: 80px;
+    margin-left: 30px;
+    display: inline-block;
+}
+
+.menu-btn {
+    margin-right: 30px;
+    display: inline-block;
+}
+    
+.me-box {
+    width: 300px;
+}
+
+.me-box2,.me-box3  {
+    width: 300px;
+    padding: 0 0%;
+}
+    
+.wave-circle {
+  top: 40px;
+  transform: translate(-50%);
+  left: 50%;   
+}
+
+.wave-circle2 {
+  width: 150px;
+  height: 150px;
+  top: 300px;
+  left: -40px;
+}
+
+.wave-circle3 {
+  transform: translate(-50%);
+  left: 50%;    
+}
+
+.wave-circle4 { 
+  width: 150px;
+  height: 150px;
+  top: 250px;
+  left: 250px;
+}
+
+.wave-circle5 { 
+  transform: translate(-50%);
+  left: 50%;    
+  margin-top: 0px;
+  margin-left: 0px;       
+}
+
+.wave-circle6 {
+  width: 150px;
+  height: 150px;
+  top: 250px;
+  right: 230px;    
+}
+
+.wave-circle7 {
+  width: 130px;
+  height: 130px;
+  top: 270px;
+  left: 150px;
+}
+
+#skill-title {
+    padding-top: 0;     
+}
+    
+.skill-box {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+    
+.skill-bar {
+    display: flex;
+    flex-direction: column;
+}
+    
+.app-img {
+    margin: 0 auto;
+}
+
+.skill-p {
+    width: 300px;
+    margin-bottom: 50px;
+    margin-left: 0px;
+}
+    
+.nav-angles {
+    width: 60%;
+    height: auto;
+    padding-top: 0px;
+    margin: 0 auto;
+    text-align: center;
+}
+    
+.nav-bar {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+    
+.nav-bar-li {
+    margin: 0 auto;
+    padding: 15px 0px;
+}
+    
+}

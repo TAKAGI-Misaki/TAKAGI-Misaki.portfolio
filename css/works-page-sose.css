@@ -1,0 +1,335 @@
+@charset "UTF-8";
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #707070;
+    font-family: "游ゴシック体";
+    letter-spacing: 0.2em;
+    text-align: center;
+}
+
+.under-borderlink {
+    text-decoration: underline;
+    color: #707070;
+}
+
+ul {
+    padding-inline-start: 0px;
+}
+
+li {
+    list-style: none;
+}
+
+p {
+    font-family: "游ゴシック体";
+    font-size: 14px;
+    color: #707070;
+    letter-spacing: 0.2em;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.top-wrapper {
+    width: 100%;
+    height: auto;
+    background: #F7F7F7;
+}
+
+header {
+    width: 100%;
+    height: 180px;
+    position: fixed;
+    z-index: 3;
+}
+
+.global-ttl {
+    font-family: "Cochin";
+    font-weight: normal;
+    font-size: 14px;
+    color: #707070;
+    letter-spacing: 0.1em;
+    line-height: 180px;
+    margin-left: 80px;
+}
+
+.menu-btn {
+    width: 50px;
+    height: 70px;
+    margin-top: 80px;
+    margin-right: 80px;
+    color: #707070;
+    display: inline-block;
+    float: right;
+}
+
+.bar1,.bar2,.bar3 {
+    width: 80%;
+    border-top: solid 1.2px #707070;
+    padding-bottom: 10px;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+
+.bar1-deg {
+    transform: rotate(43deg);
+    padding-bottom: 0px;
+    transition: 0.3s;
+}
+
+.bar2-deg {
+    display: none;
+    transition: 0.3s;
+}
+
+
+.bar3-deg {
+    transform: rotate(-43deg);
+    padding-bottom: 0px;
+    transition: 0.3s;
+}
+
+
+.menu-btn-nav {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    margin-top: 150px;
+    margin-right: -50px;
+}
+
+
+.manu-nav-list {
+    text-align: right;
+    font-family: "Cochin";
+    font-weight: normal;
+    font-size: 14px;
+    color: #707070;
+    padding-bottom: 20px;
+    display: none;
+}
+
+.manu-nav-list:hover {
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.title {
+    width: 100%;
+    padding-top: 180px;
+}
+
+h1 {
+    font-family: "Cochin";
+    font-weight: normal;
+    font-size: 40px;
+    color: #707070;
+    text-align: center;
+    line-height: 0;
+    letter-spacing: 0.2em;
+    margin-bottom: 25px;
+}
+
+.sub-title {
+    font-family: "游ゴシック体";
+    font-size: 12px;
+    color: #707070;
+    text-align: center;
+    letter-spacing: 0.2em;
+}
+
+.work-title {
+    font-family: "游ゴシック体";
+    font-size: 12px;
+    color: #707070;
+    text-align: center;
+    letter-spacing: 0.2em;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.work-wrapper {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+
+#OP {
+    animation  : dray 3s ;
+}
+
+@keyframes dray {
+    0%{opacity: 0;}
+    10%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.work-Visual {
+    width: 830px;
+    height: auto;
+    text-align: center;
+    padding-bottom: 10vh;
+    margin: 0 auto;
+}
+
+.img-shadow {
+    box-shadow: 0 1px 5px -2px rgba(100, 100, 100, 0.2);
+}
+
+
+footer {
+    widows: 100%;
+    height: 40vh;
+    padding-top: 180px;
+    background: white;
+    position: relative;
+}
+
+.white-bar {
+    position: absolute;
+    width: 100%;
+    height: calc(10vw);;
+    background: #F7F7F7;
+    top: 0;
+}
+
+.step-arrow{
+    padding-top: calc(10vw + 10px); /* 高さに合わせて調節してください。*/  
+    position: relative;
+    z-index: 2;
+}
+.step-arrow::before,
+.step-arrow::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 10vw solid white;  /* 好みで高さ色を変えてください */ 
+}
+.step-arrow::before{
+    left: 0;
+    border-right: 50vw solid transparent;
+}
+.step-arrow::after{
+    right: 0;
+    border-left: 50vw solid transparent;
+}
+
+.nav-angles {
+    width: 60%;
+    height: auto;
+    padding-top: 85px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.nav-scrolls:hover {
+    opacity: 0.7;
+}
+
+.nav-scrolls {
+    font-family: "Cochin";
+    font-weight: normal;   
+}
+
+.nav-bar {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.nav-bar-li {
+    margin: 0 auto;
+    padding: 15px 15px;
+}
+
+.nav-link {
+    font-family: "游ゴシック体";
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.nav-link:hover {
+    opacity: 0.7;
+}
+
+@media screen and (max-width:1000px) {
+    
+.nav-angles {
+    width: 60%;
+    height: auto;
+    padding-top: 0px;
+    margin: 0 auto;
+    text-align: center;
+}
+    
+.nav-bar {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+    
+}
+
+@media screen and (max-width:800px) {
+
+body {
+    overflow-x: hidden;
+}    
+    
+.global-ttl {
+    line-height: 80px;
+    margin-left: 30px;
+    display: inline-block;
+}
+
+.menu-btn {
+    margin-right: 30px;
+    display: inline-block;
+}
+    
+.work-Visual {
+    width: 100%;    
+}
+    
+.img-shadow {
+    width: 100%;    
+}
+    
+.nav-angles {
+    width: 60%;
+    height: auto;
+    padding-top: 0px;
+    margin: 0 auto;
+    text-align: center;
+}
+    
+.nav-bar {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+    
+.nav-bar-li {
+    margin: 0 auto;
+    padding: 15px 0px;
+}
+    
+}
+
+
