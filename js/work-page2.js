@@ -35,12 +35,12 @@ $(window).load(function () {
     //scroll 
     $('#page-top').click(function(){
       event.preventDefault();
-    $("html,body").animate({scrollTop:$('#wash-lush').offset().top}, { duration: 'slow', easing: 'swing', });  
+    $("html,body").animate({scrollTop:$('#1313').offset().top}, { duration: 'slow', easing: 'swing', });  
     });
     
-    $('#wash-lush-btn').click(function(){
+    $('#1313-btn').click(function(){
       event.preventDefault();
-    $("html,body").animate({scrollTop:$('#wash-lush').offset().top}, { duration: 'slow', easing: 'swing', });  
+    $("html,body").animate({scrollTop:$('#1313').offset().top}, { duration: 'slow', easing: 'swing', });  
     });
          
 });

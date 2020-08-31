@@ -1,6 +1,10 @@
 // JavaScript Document
 $(function(){ 
     
+$(window).load(function () {
+// 処理
+    $('#wrapper').fadeIn();
+    $('#load').fadeOut();
 //start
     
 　setTimeout(function(){
@@ -12,22 +16,25 @@ $(function(){
           $(this).delay(300 * i).animate({ opacity: 1}, { duration: 1000, easing: 'swing'});
           });
      
-},400); 
-
+},400);
+    
+});
+    
     
    //メニューボタン
     $('.menu-btn').click(function(){
+        $('.menu-bg').delay(100).slideToggle('swing');
         
         if($('.bar1').hasClass('bar1-deg')){
  
-       $('.manu-nav-list').slideToggle('swing');
+       $('.manu-nav-list').fadeOut('swing');
         $('.bar1').removeClass('bar1-deg');
         $('.bar2').removeClass('bar2-deg');
         $('.bar3').removeClass('bar3-deg');
             
         } else {
             
-       $('.manu-nav-list').slideToggle('swing');
+       $('.manu-nav-list').delay(300).fadeIn('swing');
         $('.bar1').addClass('bar1-deg');
         $('.bar2').addClass('bar2-deg');
         $('.bar3').addClass('bar3-deg'); 
@@ -57,7 +64,7 @@ $(function(){
     
   $('#contact-btn').click(function(){
       event.preventDefault();
-    $("html,body").animate({scrollTop:$('#contact').offset().top +120}, { duration: 'slow', easing: 'swing', });  
+    $("html,body").animate({scrollTop:$('#contact').offset().top}, { duration: 'slow', easing: 'swing', });  
   });
     
     // スクロールフェードイン
@@ -65,9 +72,9 @@ $(function(){
     
     $(window).on('load scroll',function(){
        
-        if ($(window).scrollTop() > 900) {
+        if ($(window).scrollTop() > 1000) {
 
-          $('.me-box').animate({ opacity: 1}, { duration: 2000, easing: 'swing'});
+          $('.me-box').animate({ opacity: 1}, { duration: 3000, easing: 'swing'});
             
         }
     });
@@ -187,7 +194,7 @@ $(function(){
         
         $('#Owmodal8').fadeIn();
         $('.modal-overlay').fadeIn();
-        $( '#melodica' ).attr( 'src','https://www.youtube.com/embed/71STim5VKt4' );
+        $( '#melodica' ).attr( 'src','https://www.youtube.com/embed/qKE2qrN8lfg' );
         $('html').css('overflow-y','hidden');
         return false;
     });
@@ -226,7 +233,7 @@ $(function(){
    
   
    //copy-btn 
-   $('#js-copybtn').hover(function(){
+   $('#js-copybtn').hover(function(){  
       $('#text-copy').text("copy click!");
       $('#text-copy').fadeIn("fast");
    }, function(){
