@@ -4,14 +4,26 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 <title>TAKAGI Misaki.portfolio</title>
-<link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+    
+<script type="text/javascript">
+var img = new Image();
+img.onload = function() {
+setTimeout("show()",2000);
+}
+</script>    
+    
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+<link href="css/stylesheet.css" rel="stylesheet" type="text/css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="js/script.js"></script>
 </head>
 
 <body>
+<div id="load"><div id="load-text">now loading...</div></div> 
+    
+<div id="wrapper">
   <section class="top-wrapper" id="works">
+      <div class="menu-bg"></div>
       <header>
           <a href="#" class="menu-btn">
               <div class="bar1"></div>
@@ -48,7 +60,6 @@
               <a class="works-unitlink" href="works-page6.html"><img class="works-SMN" width="370" src="https://github.com/TAKAGI-Misaki/TAKAGI-Misaki.portfolio/blob/master/image/SMN-Pas-Pol.jpg?raw=true" alt><div class="works-unit-caption"> [ 模写LP ] PAS-POL</div></a>
           </li>
       </ul>
-      <a class="view-more" id="works-view-btn" href="#">VIEW MORE</a>
       <div class="arrow"></div>
   </section>
     
@@ -60,40 +71,43 @@
               <div class="about-me-text">
                   <span id="text1">名古屋学芸大学<br>メディア造形学部 映像メディア学科</span><br><span id="text2">たかぎ みさき</span><br><span id="text3">サウンド領域 4年 高木実咲</span></div></div>
           <div class="wave-circle2"></div></div></div>
-      <a class="view-more" id="about-view-btn" href="about-page.html">VIEW MORE</a>
+      <div class="more-box"><a class="view-more" id="about-view-btn" href="about-page.html">VIEW MORE</a></div>
 </section>
 <!-- other worksmodal -->
     <div id="Owmodal1" class="other-works-modal">
       <img src="https://github.com/TAKAGI-Misaki/TAKAGI-Misaki.portfolio/blob/master/image/batu.png?raw=true" class="batu" width="60" alt >
-    <iframe id="echo" width="760" height="515" src="https://www.youtube.com/embed/4tryrRmC0Mk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><h3>echo</h3>
+    <iframe id="echo" src="https://www.youtube.com/embed/4tryrRmC0Mk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><h3>echo</h3><p class="Owm-p">作曲・アートワーク</p>
     </div>
     <div id="Owmodal2" class="other-works-modal">
       <img src="https://github.com/TAKAGI-Misaki/TAKAGI-Misaki.portfolio/blob/master/image/batu.png?raw=true" class="batu" width="60" alt >
       <iframe id="kutushita" src="https://player.vimeo.com/video/247259958?autoplay=1" width="740" height="460" frameborder="0" allow="accelerometer; fullscreen" allowfullscreen></iframe>
+     <h3 class="nippon-h3">くつしたの日オープニングムービー</h3><p class="Owm-p">作曲</p>
     </div>
     <div id="Owmodal3" class="other-works-modal">
       <img src="https://github.com/TAKAGI-Misaki/TAKAGI-Misaki.portfolio/blob/master/image/batu.png?raw=true" class="batu" width="60" alt >
-    <iframe id="yamanosachi" width="760" height="515" src="https://www.youtube.com/embed/h4Ycq5H2MVQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><h3>yamanosachi</h3>
+    <iframe id="yamanosachi" width="760" height="515" src="https://www.youtube.com/embed/h4Ycq5H2MVQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><h3>yamanosachi</h3><p class="Owm-p">作曲・アートワーク</p>
     </div>
     <div id="Owmodal4" class="other-works-modal">
       <img src="https://github.com/TAKAGI-Misaki/TAKAGI-Misaki.portfolio/blob/master/image/batu.png?raw=true" class="batu" width="60" alt >
-    <iframe id="tyuka" width="760" height="515" src="https://www.youtube.com/embed/kC8m6-09jtM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><h3>弦楽四重奏のための「歓迎中華飯店」</h3>
+    <iframe id="tyuka" width="760" height="515" src="https://www.youtube.com/embed/kC8m6-09jtM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><h3 class="nippon-h3">弦楽四重奏のための「歓迎中華飯店」</h3><p class="Owm-p">作曲</p>
     </div>
     <div id="Owmodal5" class="other-works-modal">
       <img src="https://github.com/TAKAGI-Misaki/TAKAGI-Misaki.portfolio/blob/master/image/batu.png?raw=true" class="batu" width="60" alt >
-    <iframe id="m" width="760" height="515" src="https://www.youtube.com/embed/71STim5VKt4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><h3>Congrats from M</h3>
+    <iframe id="m" width="760" height="515" src="https://www.youtube.com/embed/71STim5VKt4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><h3>Congrats from M</h3><p class="Owm-p">作曲</p>
     </div>
     <div id="Owmodal6" class="other-works-modal">
       <img src="https://github.com/TAKAGI-Misaki/TAKAGI-Misaki.portfolio/blob/master/image/batu.png?raw=true" class="batu" width="60" alt >
     <iframe id="owl" width="760" height="515" src="https://www.youtube.com/embed/64Fq-V4rLPY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <h3>Owl</h3><p class="Owm-p">動画</p>
     </div>
     <div id="Owmodal7" class="other-works-modal">
       <img src="https://github.com/TAKAGI-Misaki/TAKAGI-Misaki.portfolio/blob/master/image/batu.png?raw=true" class="batu" width="60" alt >
-    <iframe id="ise" width="760" height="515" src="https://www.youtube.com/embed/uwbrhLew9fQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><h3>Congrats from M</h3>
+    <iframe id="ise" width="760" height="515" src="https://www.youtube.com/embed/uwbrhLew9fQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><h3>A day trip Ise</h3><p class="Owm-p">動画</p>
     </div>
     <div id="Owmodal8" class="other-works-modal">
       <img src="https://github.com/TAKAGI-Misaki/TAKAGI-Misaki.portfolio/blob/master/image/batu.png?raw=true" class="batu" width="60" alt >
-    <iframe id="melodica" width="760" height="515" src="https://www.youtube.com/embed/qKE2qrN8lfg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><h3>3年次ゼミ展作品「MELODICA RECORD」</h3>
+    <iframe id="melodica" width="760" height="515" src="https://www.youtube.com/embed/qKE2qrN8lfg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <h3 class="nippon-h3">3年次ゼミ展作品</h3><p class="Owm-p">作曲・動画</p>
     </div>
     <div class="modal-overlay"></div>
 
@@ -124,22 +138,18 @@
 <!-- contact -->
 <section class="contact" id="contact">
     <div class="white-bar"><div class="step-arrow"></div></div>
-    <div class="title"><h1>CONTACT</h1><div class="sub-title">お問い合わせ</div></div>
+    <div class="title"><h1>CONTACT</h1><div class="sub-title contact-p">お問い合わせ</div></div>
         <div class="contact-box">
-            
+            <div class="form-link"><a href="https://docs.google.com/forms/d/e/1FAIpQLSf-_07tqLLFBfE0wqKefp9YdIj-QBOX5WH3z0OnY8aALhG8Tg/viewform?usp=sf_link"><i class="far fa-envelope"></i></a></div>
             <p><span><i class="fas fa-pencil-alt" id="js-copybtn"></i></span>
                 <br><span id="target">t7111misaki@gmail.com</span>
                 <br><span id="text-copy">copy click!</span></p>
-    
     </div>
     
-<form action="mail.php" method="post">
-  <input name="name" type="text" class="feedback-input" placeholder="Name" />   
-  <input name="email" type="text" class="feedback-input" placeholder="Email" />
-  <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
-  <input type="submit" value="SUBMIT"/>
-</form>
+
 
 </section>
+</div>    
+
 </body>
 </html>
