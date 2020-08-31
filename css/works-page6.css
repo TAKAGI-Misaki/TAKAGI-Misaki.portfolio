@@ -135,6 +135,11 @@ header {
     display: none;
 }
 
+.auto-scroll {
+    overflow-y: hidden;
+}
+
+
 .manu-nav-list:hover {
     opacity: 0.7;
     transition: 0.3s;

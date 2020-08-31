@@ -32,6 +32,19 @@ $(window).load(function () {
         return false;
     });
     
+    $('.menu-btn').on('click', function() {
+       var w = $('html').width();
+     if (w < 800,$('html').hasClass('auto-scroll')) {
+      $('html').removeClass('auto-scroll');
+         
+     } else  {
+      $('html').addClass('auto-scroll');   
+     }
+        return false;
+         
+
+    });    
+    
     //scroll 
     $('#page-top').click(function(){
       event.preventDefault();
