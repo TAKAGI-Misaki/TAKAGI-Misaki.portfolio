@@ -15,7 +15,7 @@ body {
 }
 
 #load-text {
-    font-family: "Cochin";
+    font-family: 'Josefin Sans', sans-serif;
     font-weight: normal;
     color: #707070;
     position: absolute;
@@ -27,7 +27,7 @@ body {
 a {
     text-decoration: none;
     color: #707070;
-    font-family: "游ゴシック体";
+    font-family: "M PLUS 1p";
     letter-spacing: 0.2em;
     text-align: center;
 }
@@ -46,7 +46,7 @@ li {
 }
 
 p {
-    font-family: "游ゴシック体";
+    font-family: "M PLUS 1p";
     font-size: 14px;
     color: #707070;
     letter-spacing: 0.2em;
@@ -70,7 +70,7 @@ header {
 }
 
 .global-ttl {
-    font-family: "Cochin";
+    font-family: 'Josefin Sans', sans-serif;
     font-weight: normal;
     font-size: 14px;
     color: #707070;
@@ -127,7 +127,7 @@ header {
 
 .manu-nav-list {
     text-align: right;
-    font-family: "Cochin";
+    font-family: 'Josefin Sans', sans-serif;
     font-weight: normal;
     font-size: 14px;
     color: #707070;
@@ -150,7 +150,7 @@ header {
 }
 
 h1 {
-    font-family: "Cochin";
+    font-family: 'Josefin Sans', sans-serif;
     font-weight: normal;
     font-size: 40px;
     color: #707070;
@@ -161,7 +161,7 @@ h1 {
 }
 
 .sub-title {
-    font-family: "游ゴシック体";
+    font-family: "M PLUS 1p";
     font-size: 12px;
     color: #707070;
     text-align: center;
@@ -169,7 +169,7 @@ h1 {
 }
 
 .work-title {
-    font-family: "游ゴシック体";
+    font-family: "M PLUS 1p";
     font-size: 12px;
     color: #707070;
     text-align: center;
@@ -275,7 +275,7 @@ footer {
 }
 
 .nav-scrolls {
-    font-family: "Cochin";
+    font-family: 'Josefin Sans', sans-serif;
     font-weight: normal;   
 }
 
@@ -294,7 +294,7 @@ footer {
 }
 
 .nav-link {
-    font-family: "游ゴシック体";
+    font-family: "M PLUS 1p";
     font-weight: normal;
     font-size: 14px;
 }
