@@ -4,6 +4,27 @@ body {
     position: relative;
 }
 
+#wrapper {
+    display: none;
+}
+
+#load {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: #F7F7F7;
+}
+
+#load-text {
+    font-family: "Cochin";
+    font-weight: normal;
+    color: #707070;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+}
+
 a {
     text-decoration: none;
 }
@@ -54,25 +75,25 @@ header {
     border-top: solid 1.2px #707070;
     padding-bottom: 10px;
     margin: 0 auto;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 .bar1-deg {
     transform: rotate(43deg);
     padding-bottom: 0px;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 .bar2-deg {
     display: none;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 
 .bar3-deg {
     transform: rotate(-43deg);
     padding-bottom: 0px;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 
@@ -161,16 +182,24 @@ h1 {
     letter-spacing: 0.2em;
 }
 
-.view-more {
+.more-box {
     width: 100%;
+    height: 30px;
     margin-top: 20px;
+    position: relative;
+}
+
+.view-more {
+    position: absolute;
+    transform: translate(-50%);
+    left: 50%;
     display: inline-block;
     font-family: "游ゴシック体";
     font-size: 12px;
     color: #707070;
-    text-align: center;
     letter-spacing: 0.2em; 
     transition: 0.3s;
+    border-bottom: dotted 1px #707070;
 }
 
 .view-more:hover {
@@ -293,7 +322,7 @@ h1 {
 
 .other-works-modal {
     position: fixed;
-    width: 70%;
+    width: 100%;
     height: 75vh;
     left: 50%;
     top: 50%;
@@ -309,7 +338,43 @@ h1 {
     margin-right: 30px;
 }
 
+h3 {
+    font-family: "Cochin";
+    font-weight: normal;
+    font-size: 40px;
+    color: white;
+    letter-spacing: 0.2em; 
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.nippon-h3 {
+    font-family: "游ゴシック体";
+    font-weight: normal;
+    font-size: 30px;
+    color: white;
+    letter-spacing: 0.2em; 
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%);    
+}
+
+.Owm-p {
+    color: white;
+    letter-spacing: 0.2em; 
+    position: absolute;
+    bottom: 95px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+
 iframe {
+    width: 560px;
+    height: 315px;
     position: absolute;
     transform: translate(-50%,-50%);
     left: 50%;
@@ -382,7 +447,7 @@ iframe {
 
 .contact {
     widows: 100%;
-    height: 100vh;
+    height: 700px;
     padding-top: 180px;
     background: white;
     position: relative;
@@ -436,72 +501,45 @@ iframe {
 
 #text-copy {
     display: inline-block;
-    margin-top: 10px;
     padding: 5px 30px;
     background: #707070;
     color: white;
     border-radius: 60px;
     position: relative;
+    display: none;
 }
 
 #text-copy:before {
   content: "";
   position: absolute;
-  top: -20px;
+  top: -10px;
   left: 50%;
-  margin-left: -15px;
-  border: 15px solid transparent;
-  border-bottom: 15px solid #707070;    
+  margin-left: -5px;
+  border: 5px solid transparent;
+  border-bottom: 5px solid #707070;    
 }
 
-form { 
-    max-width:420px; 
-    margin:50px auto;
+.contact-p {
+    padding-bottom: 30px;
 }
 
-.feedback-input {
-  color: #707070;
-  font-family: "游ゴシック体";
-  font-size: 18px;
-  border-radius: 5px;
-  letter-spacing: 0.1em;
-  line-height: 22px;
-  background-color: transparent;
-  border:2px solid  #707070;
-  transition: all 0.3s;
-  padding: 13px;
-  margin-bottom: 15px;
-  width:100%;
-  box-sizing: border-box;
-  outline:0;
+.form-link {
+    width: 150px;
+    height: 120px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 1px 5px -2px rgba(100, 100, 100, 0.6);
+    margin: 0 auto;
 }
 
-.feedback-input:focus { border:2px solid  #707070; }
-
-textarea {
-  height: 150px;
-  line-height: 150%;
-  resize:vertical;
+.form-link a {
+    color: #707070;
+    font-size: 100px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
 }
-
-[type="submit"] {
-  font-family: "Cochin";
-  font-weight: normal;
-  letter-spacing: 0.1em;
-  width: 100%;
-  background: #707070;
-  border-radius:5px;
-  border:0;
-  cursor:pointer;
-  color: white;
-  font-size:24px;
-  padding-top:10px;
-  padding-bottom:10px;
-  transition: all 0.3s;
-  margin-top:-4px;
-  
-}
-[type="submit"]:hover { background:#CC4949; }
 
 
 @media screen and (min-width:1700px) {
@@ -512,18 +550,47 @@ textarea {
     
 .other-works-list {
     width: 1100px;
-} 
+}
     
-.about-wrapper,.contact {
-    height: 70vh;
+iframe {
+    width: 760px;
+    height: 515px;
+}
+    
+h3 {
+    bottom: 150px;
+    left: 50%;
+}
+
+.nippon-h3 {
+    bottom: 150px;
+    left: 50%;   
+}
+
+.Owm-p {
+    color: white;
+    letter-spacing: 0.2em; 
+    position: absolute;
+    bottom: 220px;
+    left: 50%;
+    transform: translate(-50%);
+}
+    
+.about-wrapper {
+    height: 850px;     
+}    
+    
+.contact {
+    height: 50vh;
 }     
     
 }
 
 @media screen and (max-width:1100px) {
        
-.about-wrapper,.contact {
-    height: 70vh;
+.about-wrapper {
+    height: 900px;
+    padding-bottom: 80px;
 }     
     
 }
@@ -532,12 +599,28 @@ textarea {
 
 body {
     overflow-x: hidden;
-}    
+}
     
 .global-ttl {
-    line-height: 80px;
-    margin-left: 30px;
-    display: inline-block;
+    display: none;
+}
+    
+.bar1-deg,.bar3-deg {
+    border-top: solid 1.2px white;
+}
+
+.manu-nav-list {
+    color: white;
+}
+
+.menu-bg {
+        background: #707070;
+        width: 100%;
+        height: 100%;
+        opacity: .3;
+        z-index: 3;
+        position: fixed;
+        display: none;
 }
 
 .menu-btn {
@@ -549,8 +632,12 @@ body {
     width: 260px;    
 }
     
-.about-wrapper,.contact {
-    height: 100vh;
+.works-unit {
+    padding: 0 1.5% 15%;
+}
+    
+.about-wrapper {
+    height: 800px;
     padding-bottom: 80px;
 }
     
@@ -592,6 +679,38 @@ body {
     
 #ohter-works-title .sub-title {
    margin-top: -20px;     
+}
+    
+.batu {
+    width: 30px;
+}
+    
+h3 {
+    font-size: 17px;
+    bottom: 30px;
+    left: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+.nippon-h3 {
+    font-size: 17px;
+    bottom: 30px;
+    left: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+.Owm-p {
+    font-size: 12px;
+    bottom: 60px;
+    left: 50%;
+}
+
+
+iframe {
+    width: 360px;
+    height: 315px;
 }
 
     
