@@ -33,8 +33,8 @@ $(window).load(function () {
     });
     
     $('.menu-btn').on('click', function() {
-       var w = $('html').width();
-     if (w < 800,$('html').hasClass('auto-scroll')) {
+      
+     if ($('html').hasClass('auto-scroll')) {
       $('html').removeClass('auto-scroll');
          
      } else  {
