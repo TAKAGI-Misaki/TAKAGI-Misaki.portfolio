@@ -16,12 +16,19 @@ body {
 
 #load-text {
     font-family: 'Josefin Sans', sans-serif;
-    font-weight: normal;
     color: #707070;
     position: absolute;
     transform: translate(-50%,-50%);
+    transform: scale(1,1);
     top: 50%;
     left: 50%;
+    animation: load 2s linear infinite;
+}
+
+@keyframes load {
+  0% { transform: scale(1,1);}
+  50% { transform: scale(1.1,1.1);}
+  100% { transform: scale(1,1);}
 }
 
 
@@ -90,30 +97,42 @@ header {
     float: right;
 }
 
+.menu-bg {
+        background: #707070;
+        width: 100%;
+        height: 100%;
+        opacity: .6;
+        z-index: 3;
+        position: fixed;
+        display: none;
+}
+
 .bar1,.bar2,.bar3 {
     width: 80%;
     border-top: solid 1.2px #707070;
     padding-bottom: 10px;
     margin: 0 auto;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 .bar1-deg {
     transform: rotate(43deg);
     padding-bottom: 0px;
-    transition: 0.3s;
+    transition: 0.5s;
+    border-top: solid 1.2px white;
 }
 
 .bar2-deg {
     display: none;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 
 .bar3-deg {
     transform: rotate(-43deg);
     padding-bottom: 0px;
-    transition: 0.3s;
+    transition: 0.5s;
+    border-top: solid 1.2px white;
 }
 
 
@@ -129,9 +148,8 @@ header {
 .manu-nav-list {
     text-align: right;
     font-family: 'Josefin Sans', sans-serif;
-    font-weight: normal;
     font-size: 14px;
-    color: #707070;
+    color: white;
     padding-bottom: 20px;
     display: none;
 }
