@@ -7,7 +7,6 @@ $(window).load(function () {
     $('#load').fadeOut();
 //start
     
-　setTimeout(function(){
        
 
           // 繰り返し処理
@@ -16,9 +15,18 @@ $(window).load(function () {
           $(this).delay(300 * i).animate({ opacity: 1}, { duration: 1000, easing: 'swing'});
           });
      
-},400);
+    var url = $(location).attr('href');
+    if(url.indexOf("?id=") != -1){
+        var id = url.split("?id=");
+        var $target = $('#' + id[id.length - 1]);
+        if($target.length){
+            var pos = $target.offset().top +120;
+            $("html, body").animate({scrollTop:pos}, 1000);
+        }
+    }
     
 });
+    
     
     
    //メニューボタン
